@@ -7,7 +7,6 @@ import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.sound.SoundInstance;
 import net.minecraft.client.sound.WeightedSoundSet;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import oshi.util.tuples.Triplet;
@@ -51,22 +50,20 @@ public class ZhongLv12ETClient implements ClientModInitializer {
     }
 
     private void onPlaySound(SoundInstance sound, WeightedSoundSet weightedSoundSet) {
-        if (sound.getCategory().equals(SoundCategory.RECORDS)) {
-            Identifier soundId = sound.getId();
-            if (soundId.toString().startsWith("minecraft:block.note_block")) {
-                Triplet<Text, Boolean, Integer> instrument = INSTRUMENT_MAP.get(soundId);
-                if (instrument == null) { return; }
-                ClientPlayerEntity player = client.player;
-                if (player == null) { return; }
-                Text toneType = instrument.getA();
-                if (instrument.getB()) { // not percussion
-                    Text noteName = getNoteNameFromPitch(sound.getPitch(), instrument.getC());
-                    Text noteInfoDisplayMsg = Text.translatable("info.note", toneType, noteName);
-                    player.sendMessage(noteInfoDisplayMsg);
-                } else {
-                    Text noteInfoDisplayMsg = Text.translatable("info.percussion", toneType);
-                    player.sendMessage(noteInfoDisplayMsg);
-                }
+        Identifier soundId = sound.getId();
+        if (soundId.toString().startsWith("minecraft:block.note_block")) {
+            Triplet<Text, Boolean, Integer> instrument = INSTRUMENT_MAP.get(soundId);
+            if (instrument == null) { return; }
+            ClientPlayerEntity player = client.player;
+            if (player == null) { return; }
+            Text toneType = instrument.getA();
+            if (instrument.getB()) { // not percussion
+                Text noteName = getNoteNameFromPitch(sound.getPitch(), instrument.getC());
+                Text noteInfoDisplayMsg = Text.translatable("info.note", toneType, noteName);
+                player.sendMessage(noteInfoDisplayMsg);
+            } else {
+                Text noteInfoDisplayMsg = Text.translatable("info.percussion", toneType);
+                player.sendMessage(noteInfoDisplayMsg);
             }
         }
     }
