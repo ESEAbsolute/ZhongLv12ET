@@ -1,0 +1,18 @@
+{
+  "instrument.banjo": "Banjo",
+  "instrument.basedrum": "Bumbo (Chute)",
+  "instrument.bass": "Baixo (Contrabaixo)",
+  "instrument.bell": "Sinos (Glockenspiel)",
+  "instrument.bit": "\"Bit\" (Onda quadrada)",
+  "instrument.chime": "Carrilhões",
+  "instrument.cow_bell": "Sino de vaca",
+  "instrument.didgeridoo": "Didgeridoo",
+  "instrument.flute": "Flauta",
+  "instrument.guitar": "Violão",
+  "instrument.harp": "Harpa / Piano",
+  "instrument.hat": "Cliques / Varas (Hihat)",
+  "instrument.iron_xylophone": "Xilofone de Ferro (Vibrafone)",
+  "instrument.pling": "\"Pling\" (Piano elétrico)",
+  "instrument.snare": "Tambor/caixa",
+  "instrument.xylophone": "Xilofone"
+}

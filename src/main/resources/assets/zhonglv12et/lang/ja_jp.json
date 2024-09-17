@@ -1,0 +1,18 @@
+{
+  "instrument.banjo": "バンジョー",
+  "instrument.basedrum": "バスドラム（キック）",
+  "instrument.bass": "バス（コントラバス）",
+  "instrument.bell": "ベル（グロッケンシュピール）",
+  "instrument.bit": "電子音（矩形波）",
+  "instrument.chime": "チャイム",
+  "instrument.cow_bell": "カウベル",
+  "instrument.didgeridoo": "ディジュリドゥ",
+  "instrument.flute": "フルート",
+  "instrument.guitar": "ギター",
+  "instrument.harp": "ハープ/ピアノ",
+  "instrument.hat": "スティック（ハイハット）",
+  "instrument.iron_xylophone": "鉄琴（ヴィブラフォン）",
+  "instrument.pling": "「Pling」（電子ピアノ）",
+  "instrument.snare": "スネアドラム",
+  "instrument.xylophone": "木琴"
+}

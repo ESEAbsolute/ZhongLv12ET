@@ -1,0 +1,18 @@
+{
+  "instrument.banjo": "Banjo",
+  "instrument.basedrum": "Grosse caisse",
+  "instrument.bass": "Contrebasse",
+  "instrument.bell": "Cloches",
+  "instrument.bit": "Son synthétique 8bit",
+  "instrument.chime": "Carillon",
+  "instrument.cow_bell": "Cloches à vaches",
+  "instrument.didgeridoo": "Didgeridoo",
+  "instrument.flute": "Flûte",
+  "instrument.guitar": "Guitare",
+  "instrument.harp": "Piano / Harpe",
+  "instrument.hat": "Clic / Baguettes",
+  "instrument.iron_xylophone": "Vibraphone",
+  "instrument.pling": "« Pling » (Harpe plus forte)",
+  "instrument.snare": "Caisse claire",
+  "instrument.xylophone": "Xylophone"
+}

@@ -1,0 +1,18 @@
+{
+  "instrument.banjo": "Banjo",
+  "instrument.basedrum": "Große Trommel",
+  "instrument.bass": "Kontrabass",
+  "instrument.bell": "Glocke",
+  "instrument.bit": "Chiptune",
+  "instrument.chime": "Glockenspiel",
+  "instrument.cow_bell": "Kuhglocke",
+  "instrument.didgeridoo": "Didgeridoo",
+  "instrument.flute": "Flöte",
+  "instrument.guitar": "Gitarre",
+  "instrument.harp": "Harfe",
+  "instrument.hat": "Klanghölzer",
+  "instrument.iron_xylophone": "Metallofon",
+  "instrument.pling": "Klavier",
+  "instrument.snare": "Kleine Trommel",
+  "instrument.xylophone": "Xylofon"
+}

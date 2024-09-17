@@ -1,0 +1,18 @@
+{
+  "block.note_block.banjo": "班卓琴",
+  "block.note_block.basedrum": "底鼓",
+  "block.note_block.bass": "貝斯",
+  "block.note_block.bell": "「鈴鐺」（鐘琴）",
+  "block.note_block.bit": "「晶片」（方波）",
+  "block.note_block.chime": "管鐘",
+  "block.note_block.cow_bell": "牛鈴",
+  "block.note_block.didgeridoo": "迪吉里杜管",
+  "block.note_block.flute": "長笛",
+  "block.note_block.guitar": "吉他",
+  "block.note_block.harp": "豎琴/鋼琴",
+  "block.note_block.hat": "踩鑔",
+  "block.note_block.iron_xylophone": "「鐵木琴」（顫音琴）",
+  "block.note_block.pling": "「扣弦」（電鋼琴）",
+  "block.note_block.snare": "小軍鼓",
+  "block.note_block.xylophone": "木琴"
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "zhonglv12et",
+  "version": "${version}",
+
+  "name": "ZhongLv12ET",
+  "description": "",
+  "authors": [
+    "ESEAbsolute"
+  ],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/zhonglv12et/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.eseabsolute.zhonglv12et.client.ZhongLv12ETClient"
+    ],
+    "main": [
+      "com.eseabsolute.zhonglv12et.ZhongLv12ET"
+    ]
+  },
+  "mixins": [
+    "zhonglv12et.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=17"
+  }
+}
