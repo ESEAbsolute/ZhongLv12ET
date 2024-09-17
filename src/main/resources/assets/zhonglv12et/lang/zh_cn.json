@@ -28,5 +28,8 @@
   "note.G#": "夷则 / G#%s/A♭%s",
   "note.A": "羽 / 南吕 / A%s",
   "note.A#": "闰宫 / 无射 / A#%s/B♭%s",
-  "note.B": "变宫 / 应钟 / B%s"
+  "note.B": "变宫 / 应钟 / B%s",
+  "octave.prefix.bass": "低音%s",
+  "octave.prefix.none": "%s",
+  "octave.prefix.treble": "高音%s"
 }

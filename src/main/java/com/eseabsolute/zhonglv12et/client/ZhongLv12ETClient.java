@@ -6,7 +6,6 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.sound.SoundInstance;
 import net.minecraft.client.sound.WeightedSoundSet;
-import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import oshi.util.tuples.Triplet;
@@ -44,9 +43,7 @@ public class ZhongLv12ETClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         client = MinecraftClient.getInstance();
-        ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
-            client.getSoundManager().registerListener(this::onPlaySound);
-        });
+        ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> client.getSoundManager().registerListener(this::onPlaySound));
     }
 
     private void onPlaySound(SoundInstance sound, WeightedSoundSet weightedSoundSet) {
@@ -77,13 +74,23 @@ public class ZhongLv12ETClient implements ClientModInitializer {
 
         int noteIndex = Math.round(adjustedPitch) % 12;
         if (noteIndex < 0) noteIndex += 12;
-        int octaveOffset = Math.round(adjustedPitch) / 12;
+        int octaveOffset = (Math.round(adjustedPitch) + 6) / 12;
         int range = initialOctave + octaveOffset;
 
+        Text noteName;
         if (need2Params[noteIndex]) {
-            return Text.translatable("note.%s".formatted(notes[noteIndex]), range, range);
+            noteName = Text.translatable("note.%s".formatted(notes[noteIndex]), range, range);
         } else {
-            return Text.translatable("note.%s".formatted(notes[noteIndex]), range);
+            noteName = Text.translatable("note.%s".formatted(notes[noteIndex]), range);
         }
+
+        String octaveIndicator = "octave.prefix.none";
+        if (octaveOffset == 0) {
+            octaveIndicator = "octave.prefix.bass";
+        } else if (octaveOffset == 2) {
+            octaveIndicator = "octave.prefix.treble";
+        }
+
+        return Text.translatable(octaveIndicator, noteName);
     }
 }

@@ -28,5 +28,8 @@
   "note.G#": "G#%s/A♭%s",
   "note.A": "A%s",
   "note.A#": "A#%s/B♭%s",
-  "note.B": "B%s"
+  "note.B": "B%s",
+  "octave.prefix.bass": "(Bass) %s",
+  "octave.prefix.none": "%s",
+  "octave.prefix.treble": "(Treble) %s"
 }

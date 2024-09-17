@@ -1,4 +1,4 @@
-## Zhonglv-12ET
+## ZhongLv-12ET
 
 ### Features
 
